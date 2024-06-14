@@ -67,18 +67,18 @@ const ContactForm = () => {
           <input
             type="text"
             name="user_name"
-            className="text-black p-1 rounded-md active:cursor-text px-2 outline-none border-b-4 border-transparent  hover:border-yellow-400"
+            className="text-black p-1 rounded-md active:cursor-text px-2 outline-none border-b-4 border-transparent  hover:border-yellow-400 bg-white"
           />
           <label>Email</label>
           <input
             type="email"
             name="user_email"
-            className="text-black  p-1 rounded-md px-2 active:cursor-text outline-none border-b-4 hover:border-yellow-400"
+            className="text-black  p-1 rounded-md px-2 active:cursor-text outline-none border-b-4 hover:border-yellow-400 bg-white"
           />
           <label>Message</label>
           <textarea
             name="message"
-            className="text-black p-2 rounded-md px-2 active:cursor-text outline-none border-b-4 border-transparent hover:border-yellow-400"
+            className="text-black p-2 rounded-md px-2 active:cursor-text outline-none border-b-4 border-transparent hover:border-yellow-400 bg-white"
           />
           <div className="w-full flex justify-center items-center py-4">
             <input
