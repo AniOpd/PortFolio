@@ -13,7 +13,7 @@ import './index.css'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App />}>
+    <Route path={'/'} element={<App />}>
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='skills' element={<Skills />} />
@@ -26,6 +26,5 @@ const router = createBrowserRouter(
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <RouterProvider router={router}>
-    </RouterProvider>
+    <RouterProvider router={router}/>
 )
