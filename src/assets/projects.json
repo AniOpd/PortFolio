@@ -12,8 +12,8 @@
             "Designed an intuitive interface tailored for easy access to weather data, leveraging JavaScript optimizations to enhance interactivity, resulting in a significant 70% boost in user satisfaction."
         ],
         "date": "Jan-2024",
-        "githubLink": "",
-        "demoLink": "",
+        "githubLink": "https://github.com/AniOpd/web-dev-/tree/master/weather",
+        "demoLink": "https://weatherappbyanish.netlify.app",
         "projectImage": "https://res.cloudinary.com/dw9evtmee/image/upload/v1718087613/pkrnkran3mehpgeryzos.png"
     },
     {
@@ -30,8 +30,8 @@
             "Launched on Netlify, ensuring optimal accessibility and performance for end-users."
         ],
         "date": "Jan-2024",
-        "githubLink": "",
-        "demoLink": "",
-        "projectImage": "https://res.cloudinary.com/dw9evtmee/image/upload/v1718087613/pkrnkran3mehpgeryzos.png"
+        "githubLink": "https://github.com/AniOpd/EcommerceProjectjs",
+        "demoLink": "https://startling-swan-f402de.netlify.app",
+        "projectImage": "https://res.cloudinary.com/dw9evtmee/image/upload/v1718421815/t8x1x2a7gkgdcoae6a0m.png"
     }
 ]

@@ -7,32 +7,17 @@ const ContactForm = () => {
   const form = useRef();
   const [error, setError] = useState(null);
 
-  const [notifyContent, setNotifyContent] = useState('');
-
-  const notify = () => {
-    if(notifyContent ==="")
-    return;
-    toast(`${notifyContent}`);
-  }
-
-//  const {register, handleSubmit}= useForm()
-
-
-
   const sendEmail = async (e) => {
     setError(null);
     e.preventDefault();
    if(e.target[0].value === ''){
-    setNotifyContent(`* Name should be filled correctly`);
-    notify();
+      toast(`* Name is required`);
      return;
     }else if(e.target[1].value === ''){
-      setNotifyContent(`* Email is required`);
-      notify();
+      toast(`* Email is required`);
      return;
     }else if(e.target[2].value === ''){
-      setNotifyContent(`* Message is required`);
-      notify();
+      toast(`* Message is required`);
      return;
     }
     await emailjs
@@ -42,13 +27,11 @@ const ContactForm = () => {
       .then(
         () => {
             form.current.reset();
-            setNotifyContent('Email sent successfully');
-            notify();
+           toast('Email sent successfully');
         },
         (error) => {
-            setNotifyContent('Email not sent');
-            setError(error);
-            notify();
+          setError(error);
+          toast('Error sending email');
         },
       );
   };
