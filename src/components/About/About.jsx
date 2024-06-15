@@ -40,7 +40,7 @@ function About() {
             />
            </div>
         </div>
-        <div className="summary max-w-full flex flex-col text-center">
+        <div className="summary max-w-full flex flex-col text-center items-center">
             <h2 className="text-4xl">
               Hii, I am{" "}
               <span className="text-yellow-600 font-bold">{profile.name}</span>
@@ -50,6 +50,9 @@ function About() {
               <Cursor cursorColor='yellow' />
             </p>
             <p className="py-5 px-2 text-xs text-left">{profile.intro}</p>
+            <a href={resume} target="blanck" className="w-1/2 "><button className="rounded-xl p-4 w-full bg-yellow-600 hover:bg-rose-700 scale-90 hover:scale-110">
+           Resume
+        </button></a>
           </div>
         </div>
 
@@ -65,6 +68,11 @@ function About() {
               <Cursor cursorColor='yellow' />
             </p>
             <p className="py-5 px-20 text-xl text-left">{profile.intro}</p>
+            <div className="text-white flex justify-center content-center w-full mt-3">
+        <a href={resume} target="blanck" className="w-1/2 "><button className="rounded-xl p-4 w-full bg-yellow-600 hover:bg-rose-700 scale-90 hover:scale-110">
+           Resume
+        </button></a>
+       </div>
           </div>
           <div className="profile_img flex justify-center align-middle content-center w-1/2">
            <div className=" h-96 w-96 overflow-hidden rounded-full items-center">
@@ -76,6 +84,7 @@ function About() {
            </div>
           </div>
         </div>
+
         <div className="skill">
             <div className="skill_Slide">
               {skills}
@@ -96,11 +105,7 @@ function About() {
        <GithubProfile />
        </div>
        </div>
-       <div className="text-white flex justify-center content-center w-full mt-3">
-        <a href={resume} target="blanck"><button className="p-4 px-8 bg-orange-500 rounded-3xl hover:bg-red-600 cursor-pointer mb-2">
-           Resume
-        </button></a>
-       </div>
+
     </>
   );
 }
